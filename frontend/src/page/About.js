@@ -164,6 +164,11 @@ export default function About() {
         ensure that your experience with our app is smooth and enjoyable. Please
         don't hesitate to reach out to us through our contact page or customer
         support channels.
+        </p>
+      <p style={paragraphStyle}>
+        Thank you for being a part of our local farming e-commerce app. 
+        Together, we can make a difference by supporting local farms, embracing sustainable practices, 
+        and enjoying the incredible flavors of fresh, farm-to-table produce
       </p>
     </div>
   );
