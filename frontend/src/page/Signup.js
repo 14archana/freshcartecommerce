@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import loginSignupImage from "../assest/login.jpg";
 import { BiShow, BiHide } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs";
+// import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import { ImagetoBase64 } from "../utility/ImagetoBase64";
 import { toast } from "react-hot-toast";
 
@@ -48,14 +48,14 @@ function Signup() {
       })
 
   }
-console.log(process.env.REACT_APP_SERVER_DOMAIN)
+console.log(process.env.REACT_APP_SERVER_DOMIN)
   const handleSubmit = async(e) => {
     e.preventDefault();
     const { firstName, email, password, confirmPassword } = data;
     if (firstName && email && password && confirmPassword) {
       if (password === confirmPassword) {
     
-          const fetchData = await fetch(`${process.env.REACT_APP_SERVER_DOMAIN}/signup`,{
+          const fetchData = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/signup`,{
             method : "POST",
             headers : {
               "content-type" : "application/json"
@@ -162,7 +162,7 @@ console.log(process.env.REACT_APP_SERVER_DOMAIN)
             </span>
           </div>
 
-          <button className="w-full max-w-[150px] m-auto  bg-green-900 hover:bg-green-900 cursor-pointer  text-white text-xl font-medium text-center py-1 rounded-full mt-4">
+          <button className="w-full max-w-[150px] m-auto  bg-green-900 hover:bg-green-600 cursor-pointer  text-white text-xl font-medium text-center py-1 rounded-full mt-4">
             Sign up
           </button>
         </form>

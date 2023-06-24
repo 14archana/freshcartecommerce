@@ -107,7 +107,7 @@ const Login = () => {
           </span>
         </div>
 
-        <button className="w-full max-w-[150px] m-auto  bg-green-900 hover:bg-red-600 cursor-pointer  text-white text-xl font-medium text-center py-1 rounded-full mt-4">
+        <button className="w-full max-w-[150px] m-auto  bg-green-900 hover:bg-green-600 cursor-pointer  text-white text-xl font-medium text-center py-1 rounded-full mt-4">
           Login
         </button>
       </form>

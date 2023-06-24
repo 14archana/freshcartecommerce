@@ -83,14 +83,9 @@ const Newproduct = () => {
           <option value={"other"}>select category</option>
           <option value={"fruits"}>Fruits</option>
           <option value={"vegetable"}>Vegetable</option>
-          <option value={"icream"}>Icream</option>
-          <option value={"dosa"}>Dosa</option>
-          <option value={"pizza"}>Pizza</option>
-          <option value={"rice"}>rice</option>
-          <option value={"cake"}>Cake</option>
-          <option value={"burger"}>Burger</option>
-          <option value={"panner"}>Panner</option>
-          <option value={"sandwich"}>Sandwich</option>
+          <option value={"spices"}>Spices</option>
+          <option value={"grains"}>Grains</option>
+          <option value={"dry fruits"}>Dry Fruits</option>
         </select>
 
         <label htmlFor='image'>Image
@@ -111,7 +106,7 @@ const Newproduct = () => {
         <label htmlFor='description'>Description</label>
         <textarea rows={2} value={data.description} className='bg-slate-200 p-1 my-1 resize-none' name='description' onChange={handleOnChange}></textarea>
 
-        <button className='bg-red-500 hover:bg-red-600 text-white text-lg font-medium my-2 drop-shadow'>Save</button>
+        <button className='bg-green-900 hover:bg-green-950 text-white text-lg font-medium my-2 drop-shadow'>Save</button>
        </form>
     </div>
   )
