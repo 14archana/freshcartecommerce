@@ -32,12 +32,12 @@ const CardFeature = ({ image, name, price, category, loading, id }) => {
             </h3>
             <p className=" text-slate-500  font-medium">{category}</p>
             <p className=" font-bold">
-              <span className="text-red-500">₹</span>
+              <span className="text-green-500">₹</span>
               <span>{price}</span>
             </p>
           </Link>
           <button
-            className="bg-yellow-500 py-1 mt-2 rounded hover:bg-yellow-600 w-full"
+            className="bg-green-500 py-1 mt-2 rounded hover:bg-green-600 w-full"
             onClick={handleAddCartProduct}
           >
             Add Cart
